@@ -1,4 +1,4 @@
-export default class forgotPasswordPage {
+class forgotPasswordPage {
     inputUsername() {
         return cy.get('[name="username"]');
     }
@@ -23,5 +23,4 @@ export default class forgotPasswordPage {
         return cy.get('span.oxd-input-group__message');
     }
 }
-
-export const forgotPassword = new forgotPasswordPage();
+export default new forgotPasswordPage()
